@@ -2,10 +2,13 @@
   "name": "cli",
   "version": "1.0.0",
   "description": "cli app",
-  "main": "index.js",
-  "bin": "./index.js",
+  "type": "module",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
   "scripts": {
-    "start":"node index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,5 +23,10 @@
   },
   "bugs": {
     "email": "samahkinets@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "chalk": "^5.4.1",
+    "dedent": "^1.5.3"
   }
 }
